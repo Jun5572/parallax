@@ -1,0 +1,78 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	position: relative;
+	font-size: 15px;
+	max-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, black, transparent);
+    overflow-x: hidden;
+}
+h2{
+	color: yellow;
+}
+.title{
+	font-size: 3em;
+}
+.wrapper{
+	width: inherit;
+	min-height: 100vh;
+	padding: 1em;
+	color: #fff;
+}
+
+.contents_box{
+	display: block;
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+.contents_box:nth-child(even) .contents_inner{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.contents_box .parallax-window{
+	width: 80%;
+	height: 500px;
+}
+
+.contents_box .lorem_text{
+	padding: 0 1em;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+.contents_inner--text{
+	display: block;
+	padding: 1em;
+	background: darkslategrey;
+}
+.row:nth-child(even) .contents_inner--text{
+	background: black;
+
+}
+
+.square{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	background: orangered;
+}
+.small{
+	width: 25px;
+	height: 25px;
+}
+.large{
+	width: 100px;
+	height: 100px;
+}
+.deg-45{
+	transform: rotate(45deg);
+}
